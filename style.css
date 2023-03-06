@@ -1,3 +1,139 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
 }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 51px;
+}
+.desktop-images{
+    display: none;
+}
+.pics{
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+    object-position: 53%;
+    padding-top: 51px;
+}
+h1, h2{
+    font-weight: 900;
+    text-align: center;
+    width: 327px;
+    
+}
+.firstdiv, .seconddiv, .footersdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.firsth1, .therdh1{
+    font-size: 40px;
+    line-height: 44px;
+    color: #28283D;
+    margin-top: 41px;
+}
+.firstp, .secondp, .therdp{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 24px;
+    color:  #87879D;
+}
+p{
+    font-weight: 500;
+    text-align: center;
+    width: 327px;
+}
+button{
+    font-family: 'Red Hat Display', sans-serif;
+    width: 193px;
+    height: 58px;
+    color: beige;
+    text-align: center;
+    border-radius: 29px;
+    border: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+}
+span{
+    opacity: 50%;
+}
+.first-button{
+    background-color: 
+    #4D96A9;
+    margin-top: 32px;
+}
+.little-button,.second-button{
+    background-color: 
+    #855FB1;
+}
+.second-button{
+    margin-bottom: 60px;
+}
+.little-button{
+    width: 139px;
+    height: 58px;
+    margin-top: 16px;
+}
+
+.pictures{
+    width: 327px;
+    margin: auto;
+    gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-pics{
+    width: 151px;
+    border-radius: 6px;
+}
+h2{
+    color: 
+    #4D96A9;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    padding-top: 46px;
+    padding-bottom: 24px;
+}
+.therdh1, .therdp{
+    color: 
+    #FAFAFA;
+}
+.therdp{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    padding-bottom: 32px;
+}
+.secondh1{
+    color: 
+    #28283D;
+    font-size: 32px;
+    line-height: 36px;
+}
+.secondp{
+    padding-bottom: 64px;
+}
+footer{
+    width: 375px;
+    height: 400px;
+    background: #4D96A9;
+    background-image: url(./mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 375px;
+
+}
+.footersdiv{
+    background:hsl(192, 37%, 48%)  ;
+    /* position: absolute; */
+    width: 375px;
+    height:400px ;
+    opacity: 80%;
+}
