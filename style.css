@@ -250,7 +250,7 @@ footer{
         width: 100%;
         position: relative;
         margin-top: 30px;
-        overflow-y: hidden;
+        overflow-x: hidden;
         height: 358px;
         border: none;
     }
