@@ -97,13 +97,9 @@ span{
     width: 1px;
     height: 84px;
     background-color: #855FB1;
-}
-.forposition{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-    top: 26px;
+    margin: auto;
+    bottom: 100px;
 }
 .circle2{
     width: 56px;
@@ -115,7 +111,9 @@ span{
     justify-content: center;
     align-items:center;
     border-radius: 29px;
-
+    position: relative;
+    margin: auto;
+    bottom: 111px;
 }
 .circle {
     width: 56px;
@@ -175,22 +173,23 @@ h2{
     line-height: 36px;
 }
 .secondp{
-    padding-bottom: 64px;
+    padding-bottom: 164px;
 }
 footer{
     width: 100%;
     height: 400px;
-    background: #4D96A9;
     background-image: url(./mobile/image-footer.jpg);
     background-repeat: no-repeat;
     background-size:100%;
-
+    
 }
 .footersdiv{
     background:hsl(192, 37%, 48%)  ;
     width: 100%;
     height:400px ;
     opacity: 80%;
+    position: relative;
+    top: -142px;
 }
 @media(min-width:768px){
     .pics{
@@ -248,16 +247,76 @@ footer{
     }
     .desktop-images{
         display: flex;
-        width: 1440px;
-        object-fit: cover;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+        overflow-y: hidden;
+        height: 358px;
+        border: none;
     }
     .desktop-images1{
         position:relative;
-        right: 2.5%;
-
+        right: 2%;
+        height: 293px;
     }
     .desktop-images2{
-        position: relative;
-        left: 50%;
+        position: absolute;
+        right:-20px;
+        height: 302px;
+        top: 52px;
+    }
+    .firstdiv{
+        position: absolute;
+        top:100px;
+    }
+    .firsth1{
+        font-size: 64px;
+        line-height: 64px;
+        width: 445px      ;
+    }
+    .firstp{
+        font-size: 18px;
+        width: 540px;
+    }
+    .first-button:hover{
+        background-color: 
+        #71C0D4;   
+        cursor:pointer;
+    }
+    .second-button:hover, .little-button:hover{
+        background-color: 
+        #B18BDD;
+        cursor: pointer;
+    }
+    .secondp{
+        width: 540px;
+        font-size: 18px;
+        text-align: center;
+        color: 
+        #87879D;
+    }
+    .secondh1{
+        line-height: 44px;
+    }
+    .small-pics{
+        width: 250px;
+    }
+    .footersdiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .therdh1{
+        margin-top: 0px;
+        text-align: left;
+    }
+    .therdp{
+        width: 350px;
+        text-align: left;
+    }
+    .second-button{
+        margin-top: 50px;
+        margin-left: 70px;
     }
 }
