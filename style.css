@@ -1,18 +1,20 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
+    
 }
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 51px;
+    overflow-y: hidden;
 }
 .desktop-images{
     display: none;
 }
 .pics{
-    width: 100%;
-    height: 152px;
+    width:100%;
+    height: 154px;
     object-fit: cover;
     object-position: 53%;
     padding-top: 51px;
@@ -62,6 +64,11 @@ button{
 span{
     opacity: 50%;
 }
+.buttons-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .first-button{
     background-color: 
     #4D96A9;
@@ -79,7 +86,55 @@ span{
     height: 58px;
     margin-top: 16px;
 }
+.line{
+    width: 1px;
+    height: 84px;
+    background-color: 
+    #87879D;
+    margin-top: 64px;
+}
+.line2{
+    width: 1px;
+    height: 84px;
+    background-color: #855FB1;
+}
+.forposition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 26px;
+}
+.circle2{
+    width: 56px;
+    height: 56px;
+    background:white;
+    border: 1px solid #87879D40;    
+    color: #87879D;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 29px;
 
+}
+.circle {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #87879D40;
+    border-radius: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #87879D;
+    margin-bottom: 64px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
 .pictures{
     width: 327px;
     margin: auto;
@@ -92,6 +147,7 @@ span{
     width: 151px;
     border-radius: 6px;
 }
+
 h2{
     color: 
     #4D96A9;
@@ -122,18 +178,86 @@ h2{
     padding-bottom: 64px;
 }
 footer{
-    width: 375px;
+    width: 100%;
     height: 400px;
     background: #4D96A9;
     background-image: url(./mobile/image-footer.jpg);
     background-repeat: no-repeat;
-    background-size: 375px;
+    background-size:100%;
 
 }
 .footersdiv{
     background:hsl(192, 37%, 48%)  ;
-    /* position: absolute; */
-    width: 375px;
+    width: 100%;
     height:400px ;
     opacity: 80%;
+}
+@media(min-width:768px){
+    .pics{
+        height:303px;
+    }
+    .buttons-row{
+        display: block;
+    }
+    .first-button{
+        margin-right: 10px;
+    }
+    .firsth1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .secondh1, .therdh1{
+        font-size: 40px;
+        line-height: 41px;
+        width: 445px;
+    }
+    .firstp, .secondp{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .firstp{
+        width: 457px;
+    }
+    .secondp{
+        width: 573px;
+    }
+    .therdp{
+        font-size: 18px;
+        line-height: 26px;
+        width: 573px;
+    }
+    .pictures{
+        flex-wrap: nowrap;
+        width: 768px;
+        justify-content: center;
+    }
+    footer{
+        background-image: url(./tablet/image-footer.jpg);
+        width: 100%;
+    }
+    main{
+        overflow-y: hidden;
+    }
+    header{
+        overflow-y: hidden;
+    }
+}
+@media(min-width:1440px){
+    .pics{
+        display: none;
+    }
+    .desktop-images{
+        display: flex;
+        width: 1440px;
+        object-fit: cover;
+    }
+    .desktop-images1{
+        position:relative;
+        right: 2.5%;
+
+    }
+    .desktop-images2{
+        position: relative;
+        left: 50%;
+    }
 }
