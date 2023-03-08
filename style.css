@@ -104,16 +104,16 @@ span{
 .circle2{
     width: 56px;
     height: 56px;
-    background:white;
+    background-color:#fff;
     border: 1px solid #87879D40;    
     color: #87879D;
     display: flex;
     justify-content: center;
     align-items:center;
     border-radius: 29px;
-    position: relative;
+    position: absolute;
+    bottom: 370px;
     margin: auto;
-    bottom: 111px;
 }
 .circle {
     width: 56px;
@@ -181,15 +181,15 @@ footer{
     background-image: url(./mobile/image-footer.jpg);
     background-repeat: no-repeat;
     background-size:100%;
-    
+
 }
 .footersdiv{
-    background:hsl(192, 37%, 48%)  ;
+    position: relative;
+    bottom: 84px;
     width: 100%;
     height:400px ;
-    opacity: 80%;
-    position: relative;
-    top: -142px;
+    background-color: rgba(96, 144, 206, 0.5);
+    color: #fff;
 }
 @media(min-width:768px){
     .pics{
